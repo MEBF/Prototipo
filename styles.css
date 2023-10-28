@@ -1,0 +1,376 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed';
+}
+
+body{
+    margin: 0px;
+    background-color: #e2e1e7;
+}
+
+p{
+    margin: 0px;
+}
+
+.portada{
+    height: 100vh;
+    margin-top: -10vh;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    /* background-image: url(img/portada.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right; */
+    
+}
+
+.portada > div:first-child{
+    width: 40vw;
+}
+
+.fondo > img{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.titulo{
+    text-transform: uppercase;
+    font-size: 7vh;
+    width: 45vh;
+    font-weight: 600;
+    padding: 150px 0 0 200px;
+    
+    /* border: 1px solid; */
+}
+
+.subtitulo{
+    font-size: 2.5vh;
+    width: 40vh;
+    padding: 20px 0 0 200px;
+    
+    /* border: 1px solid; */
+}
+
+.header{
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+
+}
+
+.navegacion{
+    height: 10vh;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2%;
+}
+
+.navegacion > a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.logo{
+    height: 10vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.logo > img{
+    height: 10vh;
+}
+
+.escribenos{
+    margin: 70px 0 0 200px;
+    width: 26vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn-icon{
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    text-align: left;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    background-color: white;
+    cursor: pointer;
+
+    font-size: .7rem;
+}
+
+.img-boton{
+    position: absolute;
+    padding-right: 8px;
+}
+
+.acerca-de{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+    padding: 0 8vw;
+}
+
+.seccion-acerca{
+    background-color: #0166ff;
+    margin: 1vw;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: end;
+}
+
+.seccion-titulo{
+    padding-left: 2vw;
+    padding-bottom: 1.5vw;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 8vw;
+}
+
+.img1{
+    object-fit: cover;
+    height: 21.5vw;
+    width: 20vw;
+    margin: 1vw;
+    border-radius: 20px;
+}
+
+.img2{
+    object-fit: cover;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    height: 18vw;
+    width: 100%;
+    margin: 1vw;
+    border-radius: 20px;
+}
+
+.descrip1{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    padding-top: 5vw;
+    padding-left: 7vw;
+}
+
+.descrip1 p:first-child{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.descrip1 p:nth-child(2){
+    padding-top: 2vw;
+    font-size: 1rem;
+}
+
+.leer-mas{
+    margin: 5vw 0 0 0;
+    width: 16vw;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+    padding: 0 8vw;
+}
+
+.seccion-productos{
+    background-color: #0166ff;
+    margin: .5vw;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: end;
+    grid-row: 1/2;
+    margin-top: 5vw;
+}
+
+.botones{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin: .5vw;
+    margin-bottom: 5vw;
+}
+
+.botones img:first-child{
+    padding-right: 60px;
+}
+
+.cuadro{
+    background-color: rgb(240, 240, 240);
+    grid-row: 1/3;
+    margin: 5vw .5vw;
+    padding: 2vw;
+    border-radius: 20px;
+}
+
+.p-titulo{
+    font-weight: 600;
+    padding-bottom: 1.5vw;
+    font-size: 1rem;
+}
+
+.parrafo{
+    font-size: .8rem;
+}
+
+.img{
+    height: 8vh;
+    padding-bottom: 1.5vw;
+}
+
+.prensa{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+    padding: 0 8vw;
+}
+
+.descrip-prensa{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    padding-top: 5vw;
+    padding-right: 7vw;
+}
+
+.descrip-prensa p:first-child{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.descrip-prensa p:nth-child(2){
+    padding-top: 2vw;
+    font-size: 1rem;
+}
+
+.img2-prensa{
+    object-fit: cover;
+    grid-row: 2/3;
+    grid-column: 2/4;
+    height: 18vw;
+    width: 100%;
+    margin: 1vw;
+    border-radius: 20px;
+}
+
+.logos{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 2vh 8vw;
+    justify-content: space-between;
+}
+
+.img-l{
+    height: 8vh;
+}
+
+.contacto{
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 50% 50%;
+    height: 100vh;
+    padding: 0 8vw;
+}
+
+.seccion-contacto{
+    background-color: #0166ff;
+    margin: .5vw;
+    margin-top: 5vw;
+    border-radius: 20px;
+    text-transform: uppercase;
+    grid-row: 1/2;
+    display: flex;
+    align-items: end;
+}
+
+.datos{
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px 0 0 20px;
+    padding: 3vw;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    margin-left: 1vw;
+}
+
+.titulo-datos{
+    font-weight: 600;
+    padding-top: 3vw;
+    padding-bottom: 1.5vw;
+    font-size: 1rem;
+}
+
+.telef{
+    padding-bottom: 1.5vw;
+    font-size: .8rem;
+}
+
+.contactanos{
+    margin-top: 3vw;
+    width: 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.mapouter{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    
+}
+
+#gmap_canvas{
+    height: 78.8vh;
+    width: 100%;
+    border-radius: 0 20px 20px 0;
+}
+
+.enDesarrollo{
+    display: none;
+}
+
+@media screen and (max-width: 855px) {
+    .enDesarrollo{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        background-color: #e2e1e7;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .enDesarrollo > h1{
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .header, .portada, .acerca-de, .productos, .prensa, .logos, .contacto{
+        display: none;
+    }
+}
